@@ -1,0 +1,5 @@
+RING_mrf1        = [23, 79]         (Zinc finger, RING-type)
+B-box_mrf1      = [117, 159]       (Zinc finger, B box-type)
+Coiled-coil_mrf1 = [207, 269]       (Coiled coil)
+COS_mrf1         = [267, 325]       (Domain, COS)
+IDR_mrf1        = [326, 353]       (Region, Disordered)

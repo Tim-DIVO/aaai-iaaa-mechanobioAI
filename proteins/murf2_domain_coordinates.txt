@@ -1,0 +1,5 @@
+RING        = [10, 66]         (Zinc finger, RING-type)
+B-box       = [103, 145]       (Zinc finger, B box-type)
+Coiled-coil = [168, 248]       (Coiled coil)
+COS         = [269, 327]       (Domain, COS)
+IDR         = [326, 532]       (Region, Disordered)

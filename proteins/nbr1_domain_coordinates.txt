@@ -1,0 +1,4 @@
+ZZ          = [191, 243]       (Domain, ZZ-type)
+Coiled-coil = [274, 308]       (Coiled coil)
+IDR1        = [678, 707]       (Region, Disordered; acidic stretch 678–697)
+IDR2        = [729, 771]       (Region, Disordered)

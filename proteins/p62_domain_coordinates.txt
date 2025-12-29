@@ -1,0 +1,6 @@
+PB1         = [3, 102]         (Domain, PB1)
+ZZ          = [123, 173]       (Zinc finger, ZZ-type)
+UBA         = [389, 434]       (Domain, UBA)
+IDR1        = [196, 235]       (Region, Disordered)
+IDR2        = [264, 390]       (Region, Disordered)
+LIR         = [336, 341]       (Motif, LIR / MAP1LC3B-binding)

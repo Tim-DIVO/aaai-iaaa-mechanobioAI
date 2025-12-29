@@ -1,0 +1,1 @@
+Kinase = [32178, 32432] # (Domain, Pseudokinase)

@@ -1,0 +1,36 @@
+mechanobioAI: A Mechanobiology-Driven Knowledge Graph for N-of-1 Exercise Personalization
+Tim Wehnes1,2, Kresimir Friganovic3, Jessica K. Lu4, Iva Bojic5, Muhammad Daniel Azlan bin Mahadzir6
+1 University of Amsterdam, Amsterdam, Netherlands
+2 Vrije Universiteit Amsterdam, Amsterdam, Netherlands
+3 Singapore-ETH Centre, CREATE Campus, Singapore, Singapore
+4 Yong Loo Lin School of Medicine, National University of Singapore, Singapore, Singapore
+5 Lee Kong Chian School of Medicine, Nanyang Technological University, Singapore
+6 SingHealth Duke-NUS Global Health Institute, Duke-NUS Medical School, Singapore, Singapore
+Abstract
+Aim/Purpose
+This paper addresses the significant inter-individual variability in physiological adaptation to exercise, a phenomenon that limits the efficacy of generalized fitness programs. We introduce mechanobioAI, a conceptual framework that outlines how a mechanobiology-informed knowledge graph (KG) could infer adaptive predispositions and generate N-of-1, parameterized loading prescriptions for personalized training.
+Background
+The biological basis for exercise adaptation lies in mechanotransduction, the process by which cells convert mechanical forces into biochemical signals that drive tissue remodelling [1]. Inherited polymorphisms together with epigenetic state largely determine an individual’s mechanosensitivity [2,3], predisposing them towards specific adaptive potential [4,5]. While current Artificial Intelligence (AI) in fitness leverages user data for personalization of exercise programs, it primarily relies on systemic proxy metrics (e.g., heart rate variability and energy expenditure), failing to account for the specific, cellular mechanical stimuli that are the root drivers of adaptation.
+Methodology
+MechanobioAI is a KG–driven system that ingests user anthropometrics, training history, and wearable measurements to map observable performance variables (e.g., strength, velocity, recovery metrics) to latent mechanobiological traits (e.g., muscle–tendon stiffness, fibre-type composition, recovery kinetics). The KG structure, node definitions, and association rules are defined conceptually to show how these entities and relationships are encoded and how trait-specific constraints are translated into exercise prescriptions. Estimated adaptive predispositions are then combined with a quantitative model of the titin kinase (TK) mechanosensitive switch to specify precise mechanical loading parameters (e.g., load, volume, frequency, tempo) designed to activate targeted molecular pathways [1,6]. Combined with exercise selection derived from the KG system to align with the user’s goals, this forms a personalized training plan.
+Contribution
+This framework introduces a principled approach to automated coaching beyond correlational, proxy-based models. By encoding mechanobiological and genetic predispositions in a KG, it turns latent adaptive profiles into actionable tools for fitness professionals, generating N-of-1 exercise prescriptions and program designs at scale to address a key gap in digital health personalization.
+Findings
+KG inference could be provisionally validated via feasibility analyses on public datasets that pair anthropometrics or performance proxies with common polymorphisms, testing whether KG-inferred mechanobiological traits could recapitulate known genotype–phenotype links. We emphasize that no datasets currently exist that pair genomic profiles with controlled exercise-adaptation outcomes at a sufficient scale, and therefore, no model training or validation of the proposed system is performed. The resulting system is hypothesized to yield more predictable, efficient, and effective training outcomes compared to generic programs or purely automated AI coaches. By aligning prescribed mechanical stimuli with an individual's predicted biological profile and validating it with human expertise, mechanobioAI has the potential to accelerate physiological adaptation, mitigate the risk of injuries, and fundamentally enhance the precision and personalization of personal training.
+Future Research
+Future work must empirically validate the mechanobiological profiling algorithm against genomic and training data, integrate non-invasive mechanosensors (e.g., electromyography, inertial measurement unit) for real-time tissue feedback, and develop ethical and data-privacy frameworks for predictive physiological data in commercial fitness.
+Keywords
+Mechanobiology, Artificial Intelligence, Personalized Exercise, Resistance Training, Digital Health, Knowledge Graphs.
+
+
+
+References
+[1] Ibata, N., & Terentjev, E. M. (2021). Why exercise builds muscles: titin mechanosensing controls skeletal muscle growth under load. Biophysical Journal, 120(17), 3649–3663. https://doi.org/10.1016/j.bpj.2021.07.023
+
+[2] Radke, M. H., Polack, C., Methawasin, M., Fink, C., Granzier, H. L., & Gotthardt, M. (2019). Deleting full length Titin versus the Titin M-Band region leads to differential mechanosignaling and cardiac phenotypes. Circulation, 139(15), 1813–1827. https://doi.org/10.1161/circulationaha.118.037588 
+
+[3] Cosgrove, B. D., Bounds, L. R., Taylor, C. K., Su, A. L., Rizzo, A. J., Barrera, A., Sun, T., Safi, A., Song, L., Whitlow, T., Tata, A., Iglesias, N., Diao, Y., Tata, P. R., Hoffman, B. D., Crawford, G. E., & Gersbach, C. A. (2025). Mechanosensitive genomic enhancers potentiate the cellular response to matrix stiffness. Science. https://doi.org/10.1126/science.adl1988 
+
+‌[4] Timmons, J. A., Knudsen, S., Rankinen, T., Koch, L. G., Sarzynski, M., Jensen, T., Keller, P., Scheele, C., Vollaard, N. B. J., Nielsen, S., Åkerström, T., MacDougald, O. A., Jansson, E., Greenhaff, P. L., Tarnopolsky, M. A., Van Loon, L. J. C., Pedersen, B. K., Sundberg, C. J., Wahlestedt, C., .Bouchard, C. (2010). Using molecular classification to predict gains in maximal aerobic capacity following endurance exercise training in humans. Journal of Applied Physiology, 108(6), 1487–1496. https://doi.org/10.1152/japplphysiol.01295.2009 
+[5] Hubal, M. J., Gordish-Dressman, H., Thompson, P. D., Price, T. B., Hoffman, E. P., Angelopoulos, T. J., Clarkson, P. M. (2005). Variability in muscle size and strength gain after unilateral resistance training. Medicine and Science in Sports and Exercise, 37(6), 964–972. https://pubmed.ncbi.nlm.nih.gov/15947721/ 
+[6] Pizzolato, C., Lloyd, D. G., Barrett, R. S., Cook, J. L., Zheng, M. H., Besier, T. F., & Saxby, D. J. (2017). Bioinspired technologies to connect musculoskeletal mechanobiology to the person for training and rehabilitation. Frontiers in Computational Neuroscience, 11. https://doi.org/10.3389/fncom.2017.00096 
