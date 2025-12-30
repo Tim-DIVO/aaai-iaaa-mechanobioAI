@@ -107,7 +107,7 @@ This feasibility study demonstrates that mechanobiology-informed phenotype patte
 
 **Biophysical modeling gap:** Our impact scores derive from sequence-based predictors (SIFT/PolyPhen), not from actual biophysical simulations of how mutations alter protein dynamics or binding affinities. True mechanobiological modeling would require structure prediction for mutated proteins (challenging for giant proteins like titin) followed by molecular dynamics simulations to quantify functional effects on mechanosensing.
 
-**Knowledge graph incompleteness:** Domain-pathway weights were assigned via LLM-assisted literature review rather than systematic ontology extraction. A production system would require comprehensive mining of PubMed to build exhaustive protein-pathway-phenotype relationships with quantified confidence.
+**Knowledge graph incompleteness:** Domain-pathway and genomic trait-phenotype weights were assigned via LLM-assisted literature review rather than systematic ontology extraction. A production system would require comprehensive mining of PubMed to build exhaustive protein-pathway-phenotype relationships with quantified confidence.
 
 **Absence of real validation data:** No datasets currently pair individual genotypes with controlled exercise-adaptation outcomes at sufficient scale. The synthetic cohort validates computational consistency but cannot confirm biological validity. Prospective studies pairing genomic profiles with longitudinal training responses are essential for model validation.
 
