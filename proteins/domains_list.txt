@@ -1,0 +1,182 @@
+DOMAIN LIST - All Domains in Dataset
+=====================================
+
+Generated from: domain_variants_complete.csv
+Total variants: 2,139
+Date: 2025-12-29
+
+Format: Domain (Protein) - one line per protein-domain combination
+
+---
+
+NOTE ON TITIN (TTN):
+For this MVP, we include only the Kinase domain of TTN. Titin is the largest
+known protein (~35,000 amino acids) with 100+ Ig and FN3 domains, which would
+dominate the dataset with excessive variant counts. The Kinase domain is
+selected as the mechanosensing-relevant signaling hub for this proof-of-concept.
+
+---
+
+DOMAIN-PROTEIN COMBINATIONS (21 total):
+
+B-box (MuRF1)
+B-box (MuRF2)
+Coiled-coil (MuRF1)
+Coiled-coil (MuRF2)
+Coiled-coil (NBR1)
+COS (MuRF1)
+COS (MuRF2)
+IDR (MuRF1)
+IDR (MuRF2)
+IDR1 (NBR1)
+IDR1 (p62)
+IDR2 (NBR1)
+IDR2 (p62)
+Kinase (TTN)
+LIR (p62)
+PB1 (p62)
+RING (MuRF1)
+RING (MuRF2)
+UBA (p62)
+ZZ (NBR1)
+ZZ (p62)
+
+---
+
+DETAILED BREAKDOWN BY PROTEIN:
+
+NBR1:
+  - Coiled-coil
+  - IDR1
+  - IDR2
+  - ZZ
+
+MuRF1:
+  - B-box
+  - Coiled-coil
+  - COS
+  - IDR
+  - RING
+
+MuRF2:
+  - B-box
+  - Coiled-coil
+  - COS
+  - IDR
+  - RING
+
+p62:
+  - IDR1
+  - IDR2
+  - LIR
+  - PB1
+  - UBA
+  - ZZ
+
+TTN:
+  - Kinase (only; Ig/FN3 domains excluded for MVP)
+
+---
+
+VARIANT COUNTS BY DOMAIN-PROTEIN (sorted by count):
+
+Kinase (TTN): 409 variants
+IDR (MuRF2): 284 variants
+IDR2 (p62): 242 variants
+PB1 (p62): 158 variants
+Coiled-coil (MuRF2): 116 variants
+COS (MuRF2): 85 variants
+Coiled-coil (MuRF1): 81 variants
+UBA (p62): 77 variants
+ZZ (p62): 76 variants
+RING (MuRF1): 69 variants
+IDR1 (p62): 69 variants
+COS (MuRF1): 68 variants
+RING (MuRF2): 67 variants
+B-box (MuRF1): 66 variants
+B-box (MuRF2): 52 variants
+ZZ (NBR1): 50 variants
+IDR2 (NBR1): 48 variants
+Coiled-coil (NBR1): 47 variants
+IDR1 (NBR1): 37 variants
+IDR (MuRF1): 26 variants
+LIR (p62): 12 variants
+
+---
+
+TOTAL DOMAIN-PROTEIN COMBINATIONS: 21
+
+================================================================================
+LLM PROMPT FOR DOMAIN-TRAIT RELATIONSHIP RESEARCH
+================================================================================
+
+Use the following prompt with an LLM to generate domain-trait weight assignments:
+
+---BEGIN PROMPT---
+
+You are a molecular biology research assistant specializing in muscle physiology,
+autophagy, and mechanobiology.
+
+For each of the following protein domains, find AT LEAST 2 peer-reviewed
+reference papers that describe the domain's role in muscle biology. Then assess
+each domain's relationship to TWO genomic trait bins:
+
+  1. HYPERTROPHY - muscle growth, protein synthesis, mTOR signaling, anabolic pathways
+  2. AUTOPHAGY - protein degradation, quality control, mitophagy, proteostasis
+
+DOMAINS TO ANALYZE (21 domain-protein combinations):
+
+Structured domains (functional):
+1.  B-box (MuRF1) - TRIM family zinc-binding domain
+2.  B-box (MuRF2) - TRIM family zinc-binding domain
+3.  Coiled-coil (MuRF1) - oligomerization domain
+4.  Coiled-coil (MuRF2) - oligomerization domain
+5.  Coiled-coil (NBR1) - oligomerization domain
+6.  COS (MuRF1) - C-terminal subgroup one signature
+7.  COS (MuRF2) - C-terminal subgroup one signature
+8.  Kinase (TTN) - titin's C-terminal signaling kinase
+9.  LIR (p62) - LC3-interacting region, autophagosome targeting
+10. PB1 (p62) - Phox and Bem1 domain, autophagy receptor
+11. RING (MuRF1) - E3 ubiquitin ligase domain
+12. RING (MuRF2) - E3 ubiquitin ligase domain
+13. UBA (p62) - ubiquitin-associated domain
+14. ZZ (NBR1) - zinc finger domain
+15. ZZ (p62) - zinc finger domain
+
+Intrinsically disordered regions (regulatory/linker):
+16. IDR (MuRF1) - intrinsically disordered region
+17. IDR (MuRF2) - intrinsically disordered region
+18. IDR1 (NBR1) - intrinsically disordered region 1
+19. IDR1 (p62) - intrinsically disordered region 1
+20. IDR2 (NBR1) - intrinsically disordered region 2
+21. IDR2 (p62) - intrinsically disordered region 2
+
+FOR EACH DOMAIN, PROVIDE:
+
+A) REFERENCE PAPERS (minimum 2):
+   - Author et al., Year, Journal
+   - Brief relevance statement (1 sentence)
+
+B) TRAIT ASSESSMENTS:
+   | Domain (Protein) | Trait      | Qualitative (≤5 words)       | Weight (0-1) |
+   |------------------|------------|------------------------------|--------------|
+   | Example (Prot)   | Hypertrophy| "Promotes muscle growth"     | 0.75         |
+   | Example (Prot)   | Autophagy  | "Essential for proteostasis" | 0.90         |
+
+WEIGHT GUIDELINES:
+- 0.0-0.2: Minimal or no direct involvement
+- 0.2-0.4: Indirect or context-dependent involvement
+- 0.4-0.6: Moderate involvement, secondary pathway
+- 0.6-0.8: Strong involvement, primary pathway
+- 0.8-1.0: Critical/essential, loss causes severe phenotype
+
+NOTE ON IDRs: Intrinsically disordered regions often serve as regulatory hubs,
+post-translational modification sites, or flexible linkers. Their contribution
+to traits may be through modulating the function of adjacent structured domains.
+
+OUTPUT FORMAT:
+Return a structured table with all 21 domains × 2 traits = 42 rows, plus the
+reference papers section organized by domain.
+
+---END PROMPT---
+

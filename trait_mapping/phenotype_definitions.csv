@@ -1,0 +1,12 @@
+phenotype,description,hypertrophy_coef,autophagy_coef,noise_std,baseline,unit,rationale,reference
+muscle_growth_rate,Self-reported speed of muscle gain from training,-1.5,0.5,0.12,0.5,z-score,Hypertrophy disruption = can't build; autophagy disruption = less catabolism = better retention,"Sandri et al., 2013, Biogerontology"
+natural_muscle_mass,Tendency to carry muscle without training,-1.5,0.6,0.10,0.5,z-score,MuRF1/2 regulate muscle mass; reduced autophagy preserves mass from breakdown,"Bodine et al., 2001, Science"
+strength_1rm,Normalized 1-rep max strength,-1.2,0.3,0.15,0.5,z-score,Muscle mass correlates with strength; less catabolism helps maintain strength,"Blaauw & Reggiani, 2014, Compr Physiol"
+power_output,Explosive power (vertical jump/sprint),-1.3,0.2,0.12,0.5,z-score,Fast-twitch fiber development requires hypertrophic signaling,"Schiaffino et al., 2013, FEBS J"
+vo2max,Maximal oxygen uptake,-0.2,-1.5,0.15,0.5,z-score,Autophagy critical for mitochondrial quality control; hypertrophy less relevant for cardio,"Lira et al., 2013, FASEB J"
+time_to_exhaustion,Endurance performance (5k/10k time inverse),-0.1,-1.5,0.12,0.5,z-score,Mitophagy maintains healthy mitochondria for sustained aerobic performance,"Rocchi & He, 2017, Curr Pathobiol Rep"
+recovery_speed,Self-reported recovery between sessions,-0.2,-1.5,0.12,0.5,z-score,Autophagy essential for clearing damaged proteins post-exercise,"Grumati et al., 2011, Autophagy"
+doms_severity,Delayed onset muscle soreness intensity,0.2,1.5,0.15,0.5,z-score,Impaired autophagy = accumulation of damaged proteins = more soreness,"PMC6628249 - Muscle injury recovery"
+injury_susceptibility,Tendency toward muscle strains/tears,0.4,0.8,0.15,0.5,z-score,Both pathways contribute to muscle quality control and repair mechanisms,"Masiero et al., 2009, Cell Metab"
+training_responsiveness,Overall adaptation to training stimulus,-0.6,-0.6,0.12,0.5,z-score,Both hypertrophy and autophagy equally required for exercise adaptation,"He et al., 2012, Nature"
+

@@ -1,0 +1,43 @@
+{
+  "hypertrophy_burden": {
+    "r2_train": 0.9909965563536537,
+    "r2_test": 0.990247541683783,
+    "mse_train": 0.0008547174793184295,
+    "mse_test": 0.0008788099833389864,
+    "mae_train": 0.018412900579235537,
+    "mae_test": 0.018700205802297053
+  },
+  "autophagy_burden": {
+    "r2_train": 0.9939170874178894,
+    "r2_test": 0.9935111286776167,
+    "mse_train": 0.0009107842564354593,
+    "mse_test": 0.0009207191349026416,
+    "mae_train": 0.019509143254239365,
+    "mae_test": 0.019481814532737562
+  },
+  "model_info": {
+    "hidden_layers": [
+      64,
+      32
+    ],
+    "n_iter": 92,
+    "train_size": 42500,
+    "test_size": 7500,
+    "features": [
+      "muscle_growth_rate",
+      "natural_muscle_mass",
+      "strength_1rm",
+      "power_output",
+      "vo2max",
+      "time_to_exhaustion",
+      "recovery_speed",
+      "doms_severity",
+      "injury_susceptibility",
+      "training_responsiveness"
+    ],
+    "targets": [
+      "hypertrophy_burden",
+      "autophagy_burden"
+    ]
+  }
+}
